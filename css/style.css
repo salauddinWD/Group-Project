@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* All Variables */
+:root {
+  --brandColor: #FF6553;
+  --primaryColor: #FE8950;
+  --blackColor: #070603;
+  --whiteColor: #FCFCFC;
+  --iconSize: 3rem;
+  --poppinsFonts: "Poppins", sans-serif;
+  --letterSpacing-1: 0.1rem;
+  --thin: 100;
+  --extraLight: 200;
+  --light: 300;
+  --regular: 400;
+  --mediam: 500;
+  --semiBold: 600;
+  --bold: 700;
+  --extraBold: 800;
+  --black: 900;
+  --footerTitle: 2.5rem;
+  --footerIcon: 2rem;
+}
+
+/* ================= Common Style Start ================= */
+html {
+  font-size: 62.5%;
+  font-family: var(--poppinsFonts);
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #EEF1F8;
+}
+
+section{
+  padding: 8rem 0;
+}
+
+.section-title{
+  font-size: 3.5rem;
+  font-weight: var(--bold);
+  user-select: none;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.section-title::after{
+  content: '';
+  width: 50%;
+  height: 0.4rem;
+  background: var(--brandColor);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.section-dec{
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+  width: 50%;
+}
+
+.btn{
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
+}
+
+.btn:hover{
+  background: linear-gradient(to right, var(--brandColor), var(--primaryColor));
+  box-shadow: var(--brandColor) 0px 13px 27px -5px, var(--brandColor) 0px 8px 16px -8px;
+  color: #D20031;
+}
+/* ================= Common Style Ends ================= */
+
+/* ================= Header Style Start ================= */
+header {
+  background: linear-gradient(to left, #FF6853, #FF7A51);
+}
+
+header nav a.logo {
+  padding: .2rem 1.1rem;
+  border-radius: .8rem .1rem;
+  -webkit-border-radius: .8rem .1rem;
+  -moz-border-radius: .8rem .1rem;
+  -ms-border-radius: .8rem .1rem;
+  -o-border-radius: .8rem .1rem;
+  float: left;
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 900;
+  color: var(--whiteColor);
+  text-transform: uppercase;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+header nav a.logo img{
+  width: 5rem;
+
+}
+
+header nav .main-nav {
+  float: right;
+  margin-top: 1.5rem;
+}
+
+header nav .main-nav li {
+  display: inline-block;
+  margin-left: .5rem;
+}
+
+header nav .main-nav li:first-child {
+  margin-left: 0;
+}
+
+header nav .main-nav li a {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--whiteColor);
+  border-radius: .4rem;
+  padding: 1rem 1.3rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+}
+
+header nav .main-nav li:hover a {
+  color: #ddd;
+}
+
+header nav .mobile-menu span {
+  color: var(--whiteColor);
+  font-size: 3rem;
+  float: right;
+  margin-top: 1.5rem;
+  display: none;
+}
+
+header nav .mobile-menu span:hover {
+  cursor: pointer;
+}
+
+header nav .mobile-menu .overlay-bg {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: var(--brandColor);
+  z-index: 99999;
+  overflow-x: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav .mobile-menu .overlay-bg .closeBtn {
+  position: absolute;
+  top: 1.8rem;
+  right: 3.5rem;
+  font-size: 4.2rem;
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+header nav .mobile-menu .overlay-bg .overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+header nav .mobile-menu .overlay-bg .overlay-content a {
+  width: 50%;
+  margin: auto;
+  color: var(--whiteColor);
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+}
+
+header nav .mobile-menu .overlay-bg .overlay-content a:hover {
+  color: var(--whiteColor);
+}
+/* ================ Header Style Ends ================ */
+
+/* ================= Banner Section Start ================= */
+#banner{
+  background: url(../images/banner-bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.app-name{
+  font-size: 5.5rem;
+  font-weight: var(--extraBold);
+  color: var(--black);
+  letter-spacing: 0.1rem;
+}
+
+.banner-heading{
+  font-size: 3rem;
+  font-weight: var(--bold);
+  color: var(--black);
+  letter-spacing: 0.1rem;
+  line-height: 3.2rem;
+}
+.banner-description{
+  font-size: 1.6rem;
+  font-weight: var(--regular);
+  color: var(--black);
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+
+.available-text{
+  font-size: 1.4rem;
+}
+
+.appstore-btn p,
+.playstore-btn p{
+  font-size: 1rem;
+  font-weight: var(--regular);
+}
+
+.appstore-btn h3,
+.playstore-btn h3{
+  font-size: 2.2rem;
+  font-weight: var(--regular);
+}
+
+.appstore-icon,
+.playstore-icon{
+  font-size: 3.5rem;
+}
+/* ================= Banner Section Ends ================= */
+
+
+/* ================= Counter Section Start ================= */
+#counter{
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
+  color: var(--whiteColor);
+  padding: 5rem 0;
+}
+
+#counter .counter-icon{
+  font-size: 5rem;
+}
+
+#counter p{
+  font-size: 2rem;
+}
+
+#counter .counter-number{
+  font-size: 2.5rem;
+  font-weight: var(--regular);
+}
+/* ================= Counter Section Ends ================= */
+
+/* ================= services Section Ends ================= */
+#services{
+  /* background: linear-gradient(to right, var(--primaryColor), var(--brandColor)); */
+}
+
+
+#services .accordion-button{
+  font-size: 1.6rem;
+}
+
+#services .accordion-button:not(.collapsed){
+  background: var(--brandColor);
+  color: var(--whiteColor);
+}
+
+.accordion-body {
+  color: red;
+  font-size: 1.3rem;
+}
+
+#services .accordion-button::after{
+  transition: all 0.4;
+  -webkit-transition: all 0.4;
+  -moz-transition: all 0.4;
+  -ms-transition: all 0.4;
+  -o-transition: all 0.4;
+
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>');
+}
+#services .accordion-button:not(.collapsed)::after{
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>');
+}
+/* ================= services Section Ends ================= */
+
+/* ================= beautiful-interface Section Ends ================= */
+#beautiful-interface{
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
+}
+
+#beautiful-interface .card-header{
+  font-size: 2rem;
+  font-weight: var(--mediam);
+}
+
+#beautiful-interface .list-group-item {
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+}
+/* ================= beautiful-interface Section Ends ================= */
+
+/* ================= Our Team Section Start ================= */
+#our-team{
+  /* background:  linear-gradient(to right, rgba(255, 103, 83, 0.8), rgba(255, 122, 81, 0.8)), url(../images/counter-bg.jpg) no-repeat center;
+  background-size: cover; */
+}
+
+#our-team .single-card{
+  height: 20rem;
+}
+
+#our-team .wrapper{
+  perspective: 100rem;
+}
+
+#our-team .single-card{
+  transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  -webkit-transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  -moz-transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  -ms-transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  -o-transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  transform-style: preserve-3d;
+}
+
+#our-team .wrapper:hover .single-card{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  box-shadow: var(--brandColor) 0px 13px 27px -5px, var(--brandColor) 0px 8px 16px -8px;
+}
+
+#our-team .card-front,
+#our-team .card-back{
+  position: relative;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+#our-team .card-front{
+  cursor: pointer;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background: url(../images/teams.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#our-team .card-back{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  height: 100%;
+  background: #e4e4e48a;
+}
+
+#our-team .name{
+  font-size: 2rem;
+  font-weight: var(--semiBold);
+}
+
+#our-team .title{
+  font-size: 1.6rem;
+  font-weight: var(--regular);
+}
+
+#our-team .description{
+  font-size: 1.2rem;
+  font-weight: var(--light);
+  line-height: 1.3rem;
+}
+
+#our-team .team-icon{
+  font-size: 2.5rem;
+  color: var(--blackColor);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+#our-team .team-icon:hover{
+  color: var(--brandColor);
+  transform: rotate(360deg) scale(1.5);
+  -webkit-transform: rotate(360deg) scale(1.5);
+  -moz-transform: rotate(360deg) scale(1.5);
+  -ms-transform: rotate(360deg) scale(1.5);
+  -o-transform: rotate(360deg) scale(1.5);
+}
+/* ================= Our Team Section Ends ================= */
+
+/* ================= Testimonial Section Start ================= */
+#testimonial{
+  width: 100%;
+  height: 45rem;
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
+}
+
+#testimonial .review-box{
+  height: 22rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#testimonial .testimonial-card{
+  height: 25rem;
+  padding: 4rem;
+  box-sizing: border-box;
+  background: var(--whiteColor);
+  position: relative;
+  z-index: 1;
+}
+
+#testimonial .testimonial-card::before{
+  content: '';
+  width: 10rem;
+  height: 10rem;
+  border-bottom-right-radius: 100%;
+  background: var(--brandColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.profile .name{
+  font-size: 2rem;
+  font-weight: var(--mediam);
+}
+
+.profile .title{
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+}
+
+.testimonial-card .info{
+ font-size: 1.3rem;
+ font-weight: var(--regular);
+}
+
+#testimonial .profile img{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 2rem;
+  border: 0.2rem solid #fff;
+}
+
+#testimonial-slider{
+  /* width: 100%; */
+  padding-right: 5rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.slidebar{
+  width: 5rem;
+  height: 100%;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+  background: var(--brandColor);
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slidebar span{
+  font-size: 2rem;
+  padding: 1rem;
+  background: var(--whiteColor);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  cursor: pointer;
+}
+
+.slidebar span:hover{
+  color: var(--brandColor);
+}
+/* ================= Testimonial Section Ends ================= */
+
+/* ================= Contact Section Start ================= */
+#contact form label{
+  font-size: 2rem;
+}
+
+#contact form input,
+#contact form textarea{
+  font-size: 1.4rem;
+}
+
+#contact form input:focus,
+#contact form textarea:focus{
+  outline-color: var(--brandColor);
+}
+
+#contact form textarea{
+  resize: none;
+}
+
+/* ================= Contact Section Ends ================= */
+
+/* ================= Footer Start ================= */
+#footer{
+  padding: 4rem 0;
+  border-bottom: 0.2rem solid var(--blackColor);
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
+}
+
+#footer .footer-title{
+  color: var(--whiteColor);
+  font-family: var(--poppinsFonts);
+  font-size: var(--footerTitle);
+  font-weight: var(--semiBold);
+}
+
+#footer .footer-logo img{
+  width: 12rem;
+  margin-bottom: -1rem;
+  margin-top: -3rem;
+  margin-left: -2rem;
+}
+
+#footer .footer-logo .footer-btn{
+  width: fit-content;
+  color: var(--whiteColor);
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+  background: transparent;
+}
+
+#footer .footer-icon{
+  font-size: var(--footerIcon);
+  color: var(--whiteColor);
+}
+
+#footer .footer-logo .info,
+#footer .company a.link,
+#footer .support a.link,
+.get-in-touch ul li span.mail,
+.get-in-touch ul li span.phone,
+.get-in-touch ul li span.address{
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+  color: var(--whiteColor);
+  letter-spacing: 0.1rem;
+}
+/* ================= Footer Ends ================= */
+
+/* ================= Copyright Start ================= */
+.copyright{
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
+  border-top: 0.1rem solid var(--whiteColor);
+}
+
+.copyright .copyright-text p{
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.copyright .copyright-text span{
+  color: var(--whiteColor);
+}
+/* ================= Copyright Ends ================= */

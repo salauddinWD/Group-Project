@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <title>Bload Donations | Fresh hand Coder Team</title>
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <!-- css file -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+  <!-- ================= Header / Navbar Start ================= -->
+  <header class="fixed-top">
+    <nav>
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo-12.png" alt="logo">
+        </a>
+        <!-- Main Menu -->
+        <ul class="main-nav">
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#our-team">Teams</a></li>
+          <li><a href="#testimonial">testimonial</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <span onclick="openNav()">&#9776;</span>
+          <div id="myNav" class="overlay-bg">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a onclick="closeNav()" href="#home">Home</a>
+              <a onclick="closeNav()" href="#services">services</a>
+              <a onclick="closeNav()" href="#our-team">teams</a>
+              <a onclick="closeNav()" href="#testimonial">testimonial</a>
+              <a onclick="closeNav()" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ================= Header / Navbar Ends ================= -->
+
+  <main>
+    <!-- ================= Banner Section Start ================= -->
+    <section id="banner" class="d-flex align-items-center mt-lg-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="d-flex flex-column gap-5">
+              <h1 class="app-name text-uppercase">blood Center</h1>
+              <h2 class="banner-heading text-capitalize">Donate blood and save lives.</h2>
+              <p class="banner-description">Donating blood not only saves people's lives, but blood donors are also
+                benefited in many ways, some of them are - regular blood donation reduces the risk of cancer, giving
+                blood three times a year increases the rate of new red blood cell production in the body, keeps the bone
+                marrow active and Blood deficiency is quickly replenished.</p>
+              <div class="d-flex gap-4 justify-items-sm-center">
+                <button class="appstore-btn btn px-5 btn-outline-light d-flex align-items-center gap-3 rounded-4">
+                  <span class="appstore-icon"><i class="fa-brands fa-apple"></i></span>
+                  <div class="text-capitalize d-flex flex-column align-items-start">
+                    <p>available on the</p>
+                    <h3>app store</h3>
+                  </div>
+                </button>
+
+                <button class="playstore-btn btn px-5 btn-outline-light d-flex align-items-center gap-3 rounded-4">
+                  <span class="playstore-icon"><i class="fa-brands fa-google-play"></i></span>
+                  <div class="text-capitalize d-flex flex-column align-items-start">
+                    <p>available on the</p>
+                    <h3>app store</h3>
+                  </div>
+                </button>
+              </div>
+              <p class="available-text"><span class="text-warning">*</span> Available on iPhone, iPad and all Android
+                devices
+              </p>
+            </div>
+          </div>
+          <div class="d-none d-lg-block col-lg-6">
+            <div class="d-flex justify-content-end">
+              <img src="./images/banner-mobile-removebg-preview.png" alt="banner-mobile" width="350px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= Banner Section Start ================= -->
+
+    <!-- ================= Counter Section Start ================= -->
+    <section id="counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-5 mb-md-0">
+            <div class="d-flex flex-column gap-3 align-items-center">
+              <span class="counter-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+              <p class="user-select-none">Donate</p>
+              <span id="countOne" class="counter-number user-select-none">0</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-5 mb-md-0">
+            <div class="d-flex flex-column gap-3 align-items-center">
+              <span class="counter-icon"><i class="fa-solid fa-download"></i></span>
+              <p class="user-select-none">Download</p>
+              <span id="countTow" class="counter-number user-select-none">0</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column gap-3 align-items-center">
+              <span class="counter-icon"><i class="fa-solid fa-users"></i></span>
+              <p class="user-select-none">Users</p>
+              <span id="countThree" class="counter-number user-select-none">0</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column gap-3 align-items-center">
+              <span class="counter-icon"><i class="fa-solid fa-user-group"></i></span>
+              <p class="user-select-none">Regular Doner</p>
+              <span id="countFour" class="counter-number user-select-none">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= Counter Section Ends ================= -->
+
+    <!-- ================= services Section Ends ================= -->
+    <section id="services">
+      <div class="container">
+        <div class="text-center mb-5 pb-4 d-flex flex-column align-items-center">
+          <h2 class="section-title text-uppercase">Services</h2>
+          <p class="text-center mt-4 text-capitalize section-dec">Our service is to provide free blood to various
+            patients so that a patient can recover easily</p>
+        </div>
+
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-md-5">
+            <div class="accordion accordion-flush d-flex flex-column gap-3" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <div class="d-flex gap-3">
+                      <span><i class="fa-solid fa-droplet"></i></span>
+                      <span>Blood</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">A patient can easily collect blood of his required group through our one
+                    use</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div class="d-flex-gap-3">
+                      <span><i class="fa-solid fa-people-group"></i></span>
+                      <span>volunteer</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">We have around 2000 volunteers working with us who help a patient get free
+                    blood by guiding different donors.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <div class="d-flex gap-3">
+                      <span><i class="fa-solid fa-hand-holding-heart"></i></span>
+                      <span>Gol</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Our mission is to help a patient get the blood they need easily by helping
+                    a patient get the blood they need so that no one can receive treatment for lack of blood.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <div class="d-flex gap-3">
+                      <span><i class="fa-solid fa-briefcase-medical"></i></span>
+                      <span>donor</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">We have regular donors who donate blood for free and help about 2000
+                    patients with regular blood.
+                    We invite all donors to use our app to help a patient get the type of blood they need</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <div class="d-flex gap-3">
+                      <span><i class="fa-solid fa-phone"></i></span>
+                      <span>Help Center</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">A patient can easily report his problem through our help center</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="d-flex justify-content-end gap-3 owl-carousel">
+              <div class="item">
+                <img src="./images/1.png" alt="features-image" width="220px" height="400px">
+              </div>
+              <div class="item">
+                <img src="./images/2.png" alt="features-image" width="220px" height="400px">
+              </div>
+              <div class="item">
+                <img src="./images/3.png" alt="features-image" width="220px" height="400px">
+              </div>
+              <div class="item">
+                <img src="./images/4.png" alt="features-image" width="220px" height="400px">
+              </div>
+              <div class="item">
+                <img src="./images/5.png" alt="features-image" width="220px" height="400px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= services Section Ends ================= -->
+
+    <!-- ================= beautiful-interface Section Ends ================= -->
+    <section id="beautiful-interface">
+      <div class="container">
+        <div class="text-center mb-5 pb-4 d-flex flex-column align-items-center text-white">
+          <h2 class="section-title text-uppercase">Simple & Beautiful Interface</h2>
+          <p class="text-center mt-4 text-capitalize section-dec">Very simple features through which a user can
+            easily use the app A blood donor can easily donate blood to a patient</p>
+        </div>
+
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card">
+                <img src="./images/1.png" alt="1">
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./images/2.png" alt="2">
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./images/3.png" alt="3">
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./images/4.png" alt="4">
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./images/5.png" alt="5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= beautiful-interface Section Ends ================= -->
+
+    <!-- ================= Our Team Section Start ================= -->
+    <section id="our-team">
+      <div class="container">
+        <div class="text-center mb-5 pb-4 d-flex flex-column align-items-center">
+          <h2 class="section-title text-uppercase">Developer team</h2>
+          <p class="text-center mt-4 text-capitalize section-dec">I am a professional web designer designing using
+            HTML CSS Java Script Bootstrap React.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 wrapper">
+            <div class="single-card card position-relative">
+              <div class="card-front"></div>
+              <div
+                class="card-back d-flex flex-column justify-content-center gap-4 text-center p-2 p-md-5 position-absolute">
+                <div class="d-flex flex-column gap-2">
+                  <h3 class="name text-uppercase">md. salauddin</h3>
+                  <h4 class="title text-capitalize">MERN stack Developer</h4>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quas
+                  commodi
+                  natus veritatis
+                  accusantium id asperiores consequatur neque quia?</p>
+                <div class="d-flex justify-content-center gap-4">
+                  <a href="#" class="team-icon"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" class="team-icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 wrapper">
+            <div class="single-card card position-relative">
+              <div class="card-front"></div>
+              <div
+                class="card-back d-flex flex-column justify-content-center gap-4 text-center p-2 p-md-5 position-absolute">
+                <div class="d-flex flex-column gap-2">
+                  <h3 class="name text-uppercase">Md. Mithon Ali</h3>
+                  <h4 class="title text-capitalize">Web Developer</h4>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quas
+                  commodi
+                  natus veritatis
+                  accusantium id asperiores consequatur neque quia?</p>
+                <div class="d-flex justify-content-center gap-4">
+                  <a href="#" class="team-icon"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" class="team-icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 wrapper">
+            <div class="single-card card position-relative">
+              <div class="card-front"></div>
+              <div
+                class="card-back d-flex flex-column justify-content-center gap-4 text-center p-2 p-md-5 position-absolute">
+                <div class="d-flex flex-column gap-2">
+                  <h3 class="name text-uppercase">Soad Mahamud</h3>
+                  <h4 class="title text-capitalize">Web Developer</h4>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quas
+                  commodi
+                  natus veritatis
+                  accusantium id asperiores consequatur neque quia?</p>
+                <div class="d-flex justify-content-center gap-4">
+                  <a href="#" class="team-icon"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" class="team-icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 wrapper">
+            <div class="single-card card position-relative">
+              <div class="card-front"></div>
+              <div
+                class="card-back d-flex flex-column justify-content-center gap-4 text-center p-2 p-md-5 position-absolute">
+                <div class="d-flex flex-column gap-2">
+                  <h3 class="name text-uppercase">Md.Julhas</h3>
+                  <h4 class="title text-capitalize">Web Developer</h4>
+                </div>
+                <p class="description">I am a font-end web developer.</p>
+                <div class="d-flex justify-content-center gap-4">
+                  <a href="#" class="team-icon"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" class="team-icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= Our Team Section Ends ================= -->
+
+    <!-- ================= Testimonial Section Start ================= -->
+    <section id="testimonial">
+      <div class="container">
+        <div class="text-center mb-5 pb-4">
+          <h2 class="section-title text-uppercase text-white">Testimonial</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-8 col-lg-7">
+            <div class="review-box">
+              <div id="testimonial-slider">
+                <div class="testimonial-card d-flex flex-column gap-3">
+                  <div class="profile d-flex align-items-center">
+                    <img src="./images/salauddin.jpg" alt="images">
+                    <div class="d-flex flex-column gap-2">
+                      <h4 class="name text-uppercase">Md. Salauddin</h4>
+                      <p class="title text-capitalize">MERN Stack Developer</p>
+                    </div>
+                  </div>
+                  <div class="start d-flex gap-2">
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star-half"></i></span>
+                  </div>
+                  <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, inventore aperiam?
+                    Pariatur
+                    natus ipsam, ipsa quo tempora eum dolor temporibus, et expedita omnis laboriosam nihil veniam sint
+                    facere rerum modi.</p>
+                </div>
+                <div class="testimonial-card d-flex flex-column gap-3">
+                  <div class="profile d-flex align-items-center">
+                    <img src="./images/elayas.jpeg" alt="images">
+                    <div class="d-flex flex-column gap-2">
+                      <h4 class="name text-uppercase">Elias Bhuiyan</h4>
+                      <p class="title text-capitalize">Mern Stack Developer</p>
+                    </div>
+                  </div>
+                  <div class="start d-flex gap-2">
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star-half"></i></span>
+                  </div>
+                  <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, inventore aperiam?
+                    Pariatur
+                    natus ipsam, ipsa quo tempora eum dolor temporibus, et expedita omnis laboriosam nihil veniam sint
+                    facere rerum modi.</p>
+                </div>
+                <div class="testimonial-card d-flex flex-column gap-3">
+                  <div class="profile d-flex align-items-center">
+                    <img src="./images/testimonial-0.png" alt="images">
+                    <div class="d-flex flex-column gap-2">
+                      <h4 class="name text-uppercase">Md. Mithon Ali</h4>
+                      <p class="title text-capitalize">react Developer</p>
+                    </div>
+                  </div>
+                  <div class="start d-flex gap-2">
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star-half"></i></span>
+                  </div>
+                  <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, inventore aperiam?
+                    Pariatur
+                    natus ipsam, ipsa quo tempora eum dolor temporibus, et expedita omnis laboriosam nihil veniam sint
+                    facere rerum modi.</p>
+                </div>
+                <div class="testimonial-card d-flex flex-column gap-3">
+                  <div class="profile d-flex align-items-center">
+                    <img src="./images/hm-nayem.jpg" alt="images">
+                    <div class="d-flex flex-column gap-2">
+                      <h4 class="name text-uppercase">HM Nayem</h4>
+                      <p class="title text-capitalize">Full Stack Developer</p>
+                    </div>
+                  </div>
+                  <div class="start d-flex gap-2">
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star-half"></i></span>
+                  </div>
+                  <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, inventore aperiam?
+                    Pariatur
+                    natus ipsam, ipsa quo tempora eum dolor temporibus, et expedita omnis laboriosam nihil veniam sint
+                    facere rerum modi.</p>
+                </div>
+              </div>
+              <div class="slidebar">
+                <span id="upArrow" title="Click slide to top"><i class="fa-solid fa-arrow-up"></i></span>
+                <span id="downArrow" title="Click slide to bottom"><i class="fa-solid fa-arrow-down"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ================= Testimonial Section Ends ================= -->
+
+    <!-- ================= Contact Section Start ================= -->
+    <section id="contact" class="bg-white">
+      <div class="container">
+        <div class="text-center mb-5 pb-4">
+          <h2 class="section-title text-uppercase">contact us</h2>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-8">
+            <form action="#" method="post" class="d-flex flex-column gap-3">
+              <div class="input-group">
+                <label for="name" class="input-group-text p-3"><i class="fa-solid fa-user"></i></label>
+                <input id="name" type="text" class="form-control py-3" placeholder="Name" />
+              </div>
+              <div class="input-group">
+                <label for="email" class="input-group-text p-3"><i class="fa-solid fa-envelope"></i></label>
+                <input id="email" type="email" class="form-control py-3" placeholder="Email" />
+              </div>
+              <div class="input-group">
+                <label for="subject" class="input-group-text p-3"><i class="fa-solid fa-hand-point-right"></i></label>
+                <input id="subject" type="text" class="form-control" placeholder="Subject" />
+              </div>
+              <div class="input-group">
+                <label for="message" class="input-group-text p-3"><i class="fa-solid fa-pen"></i></label>
+                <textarea id="message" class="form-control py-3" rows="7" placeholder="Message"></textarea>
+              </div>
+
+              <button type="submit" class="btn py-4">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= Contact Section Ends ================= -->
+  </main>
+
+  <!-- ================= Footer Start ================= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex flex-column align-items-center gap-5 px-2 px-md-0 gap-md-0 flex-md-row">
+        <!-- footer logo -->
+        <div class="col-md-6 col-lg-3 mb-md-5 footer-logo">
+          <div class="d-flex flex-column gap-4">
+            <img src="./images/logo-1.png" alt="footer-logo" />
+            <button class="footer-btn p-0 btn">
+              <span>Read More</span>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+
+            <div class="d-flex gap-3">
+              <a href="#" class="footer-icon"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="#" class="footer-icon"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" class="footer-icon"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Company -->
+        <div class="col-md-6 col-lg-3 mb-md-5 company">
+          <div class="d-flex flex-column gap-4">
+            <h3 class="text-capitalize footer-title">company</h3>
+            <ul class="d-flex flex-column gap-3">
+              <li><a href="#" class="link text-decoration-none text-capitalize">about us</a></li>
+              <li><a href="#" class="link text-decoration-none text-capitalize">services</a></li>
+              <li><a href="#" class="link text-decoration-none text-capitalize">case studies</a></li>
+              <li><a href="#" class="link text-decoration-none text-capitalize">blog</a></li>
+              <li><a href="#" class="link text-decoration-none text-capitalize">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Support -->
+        <div class="col-md-6 col-lg-3 support">
+          <div class="d-flex flex-column gap-4">
+            <h3 class="text-capitalize footer-title">support</h3>
+            <ul class="d-flex flex-column gap-3">
+              <li><a href="#" class="link text-decoration-none text-capitalize">community</a></li>
+              <li><a href="#" class="link text-decoration-none text-capitalize">resources</a></li>
+              <li><a href="#" class="link text-decoration-none text-capitalize">faqs</a></li>
+              <li><a href="#" class="link text-decoration-none text-capitalize">privacy policy</a></li>
+              <li><a href="#" class="link text-decoration-none text-capitalize">careers</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Get in Touch -->
+        <div class="col-md-6 col-lg-3 get-in-touch">
+          <div class="d-flex flex-column gap-4">
+            <h3 class="text-capitalize footer-title">get in touch</h3>
+            <ul class="d-flex flex-column gap-3">
+              <li class="d-flex gap-3 align-items-center">
+                <span class="footer-icon"><i class="fa-solid fa-envelope"></i></span>
+                <span class="mail">support@appie.com</span>
+              </li>
+              <li class="d-flex gap-3 align-items-center">
+                <span class="footer-icon"><i class="fa-solid fa-phone"></i></span>
+                <span class="phone">+(642) 342 762 44</span>
+              </li>
+              <li class="d-flex gap-3 align-items-center">
+                <span class="footer-icon"><i class="fa-solid fa-location-dot"></i></span>
+                <span class="address">442 Belle Terre St Floor 7,San Francisco, AV 4206</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ================= Footer Ends ================= -->
+
+  <!-- =========== Copyright Start ========== -->
+  <div class="copyright py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright-text text-center">
+            <p class="text-capitalize">copyright &copy; design by: <span>frish hand coder</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- =========== Copyright Ends ========== -->
+
+
+
+  <!-- ==================== js file ==================== -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <!-- owl carosel -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
